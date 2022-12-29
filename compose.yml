@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+
+  onb-postgres:
+    build:
+      context: ./postgres-docker-compose/postgres/
+      args:
+        POSTGRES_VERSION: ${POSTGRES_VERSION}
+    hostname: onb-postgres
+    container_name: onb-postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes: 
+      - type: volume
+        source: onb-postgres
+        target: /var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: onboardingdb
+      POSTGRES_USER: onboardinguser
+      POSTGRES_PASSWORD: onboardingpass
+    networks:
+      - onb-network
+
+networks:
+ onb-network:
+    driver: bridge
+
+volumes:
+  onb-postgres:
