@@ -4,3 +4,6 @@
 [submodule "onboarding"]
 	path = onboarding
 	url = https://github.com/mdiazn80/onboarding.git
+[submodule "onboarding-front"]
+	path = onboarding-front
+	url = https://github.com/mdiazn80/onboarding-front.git

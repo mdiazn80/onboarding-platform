@@ -5,6 +5,10 @@
             "name": "backend"
         },
         {
+            "path": "./onboarding-front",
+            "name": "front"
+        },
+        {
             "path": "./postgres-docker-compose",
             "name": "postgres"
         },
