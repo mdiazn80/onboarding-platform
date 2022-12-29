@@ -1,8 +1,17 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
+    "folders": [
+        {
+            "path": "./onboarding",
+            "name": "backend"
+        },
+        {
+            "path": "./postgres-docker-compose",
+            "name": "postgres"
+        },
+        {
+            "path": ".",
+            "name": "all"
+        }
+    ],
 	"settings": {}
 }
